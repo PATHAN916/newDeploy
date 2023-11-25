@@ -11,7 +11,7 @@ function Login() {
     //     // validateCredential();
     //     },[]);
     let validateCredential=async()=>{
-        axios.defaults.baseURL='http://localhost:1234';
+        axios.defaults.baseURL='';
         let dataToSend =new FormData();
         dataToSend.append("email", emailInputRef.current.value);
         dataToSend.append("password",passwordInputRef.current.value);

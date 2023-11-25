@@ -11,7 +11,7 @@ let profileInputRef=useRef();
 let [profilePic,setprofilePic]=useState("./images/images.webp")
 
 let  sendSignUpDataToServerThruAxios = async()=>{
-   axios.defaults.baseURL='http://localhost:1234';
+   axios.defaults.baseURL='';
   let dataToSend = new FormData();
   dataToSend.append("fn",firstNameInputRef.current.value);
   dataToSend.append("ln",lastNameInputRef.current.value);
